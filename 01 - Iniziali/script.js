@@ -4,10 +4,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function capitalLetters(array) {
+    let arrayIniziali = [];
+    for (let i = 0; i < array.length; i++) {
+        arrayIniziali.push(array[i].charAt(0)); 
+    }
+    return arrayIniziali;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(capitalLetters(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
